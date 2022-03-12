@@ -35,9 +35,9 @@ object Watcher
 
     fun watchDirectory(
         directory: File,
-        action: (File) -> Unit,
         recursive: Boolean = false,
-        interval: Long = this.interval
+        interval: Long = this.interval,
+        action: (File) -> Unit,
     )
     {
         if (!directory.isDirectory)
